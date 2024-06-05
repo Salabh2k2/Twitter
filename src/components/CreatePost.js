@@ -1,5 +1,6 @@
 import React from 'react'
 import Avatar from 'react-avatar';
+import { FaImage } from "react-icons/fa";
 const CreatePost = () => {
   return (
     <div className='w-[100%]'>
@@ -17,10 +18,13 @@ const CreatePost = () => {
           <div className='flex'>
           <Avatar src  = "https://img.freepik.com/premium-photo/beautiful-picture-3d-cutest-little-krishna-holding-flute-generative-ai_849906-10145.jpg?w=900 " size="40" round={true} />
           
-          <input className='w-full outline-none border-none text-lg px- ml-2' type = "text" placeholder = 'What is Happening'/>
+          <input className='w-full outline-gray-600  rounded-lg text-lg px- ml-2' type = "text" placeholder = 'What is Happening'/>
           </div>
-          <div>
-            <button className='bg- px-3 border'>Post</button>
+          <div className='flex items-center justify-between p-4 border-b border-gray-300'>
+            <div>
+              <FaImage />
+            </div>
+            <button className='bg-blue-700 px-4 border-none py-1 text-lg text-white rounded-full'>Post</button>
           </div>
         </div>
     </div>
